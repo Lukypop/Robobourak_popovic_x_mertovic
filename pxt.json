@@ -1,0 +1,51 @@
+{
+    "name": "pxt-robocar-empty",
+    "version": "0.0.0",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "pxt-magicbit-pca9685": "github:tomaskazda/pxt-magicbit-pca9685#cc3452fed948afe4b2e56628fd6fde92110b3ef4",
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.5",
+        "neopixel": "github:kittenbot/pxt-neopixel#v0.6.15",
+        "bluetooth": "*"
+    },
+    "files": [
+        "README.md",
+        "main.py",
+        "tsconfig.json",
+        "test.ts",
+        "README.md",
+        ".vscode/settings.json",
+        ".vscode/tasks.json",
+        "main.blocks",
+        "main.ts",
+        "main.py",
+        ".simstate.json",
+        ".git.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "4.0.18",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "pyprj",
+    "languageRestriction": "python-only",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
+}
