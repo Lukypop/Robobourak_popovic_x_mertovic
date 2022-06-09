@@ -4,7 +4,7 @@ let pin_L = DigitalPin.P1
 let pin_R = DigitalPin.P14
 let pin_Trig = DigitalPin.P8
 let pin_Echo = DigitalPin.P15
-let whiteline = 1
+let whiteline = 0
 let connected = 0
 let start = false
 let last = 0
@@ -49,9 +49,10 @@ basic.forever(function on_forever() {
     let l: any;
     let r: any;
     
-    let speed = 60
-    let reverse_speed = -12
-    let factor = 75
+    // puvodni otaceni -12 150
+    let speed = 69
+    let reverse_speed = 0
+    let factor = 175
     let obstacle_distance = sonar.ping(pin_Trig, pin_Echo, PingUnit.Centimeters, 100)
     if (start) {
         l = (whiteline ^ pins.digitalReadPin(pin_L)) == 0 ? false : true
@@ -77,5 +78,5 @@ basic.forever(function on_forever() {
         motor_run()
     }
     
-    basic.pause(10)
+    basic.pause(32)
 })

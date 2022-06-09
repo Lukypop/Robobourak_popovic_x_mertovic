@@ -47,9 +47,10 @@ bluetooth.on_bluetooth_disconnected(on_bluetooth_disconnected)
 
 def on_forever():
     global last
-    speed = 60
-    reverse_speed = -12
-    factor = 75
+    #puvodni otaceni -12 150
+    speed = 69
+    reverse_speed = 0
+    factor = 175
     obstacle_distance = sonar.ping(pin_Trig, pin_Echo, PingUnit.CENTIMETERS, 100)
     if start:
 
@@ -76,5 +77,5 @@ def on_forever():
                 motor_run(speed, reverse_speed, factor)    
     else:
         motor_run()
-    basic.pause(10) #reakční frekvence 20 Hz
+    basic.pause(32) #reakční frekvence 20 Hz
 basic.forever(on_forever)
