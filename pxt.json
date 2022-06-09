@@ -1,5 +1,5 @@
 {
-    "name": "pxt-robocar-empty",
+    "name": "pxt-robocar-lukaspop",
     "version": "0.0.0",
     "description": "",
     "dependencies": {
@@ -20,12 +20,8 @@
         ".vscode/tasks.json",
         "main.blocks",
         "main.ts",
-        "main.py",
         ".simstate.json",
         ".git.json"
-    ],
-    "testFiles": [
-        "test.ts"
     ],
     "public": true,
     "targetVersions": {
