@@ -18,9 +18,7 @@
         ".vscode/settings.json",
         ".vscode/tasks.json",
         "main.blocks",
-        "main.ts",
-        ".simstate.json",
-        ".git.json"
+        "main.ts"
     ],
     "public": true,
     "targetVersions": {
